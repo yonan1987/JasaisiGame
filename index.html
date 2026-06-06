@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mikayla Games – Jasa Isi Game PS3, PS4, PS5 Terlengkap di Bandung</title>
+  <meta name="description" content="Mikayla Games adalah jasa isi game PlayStation PS3, PS4, PS5 terpercaya di Bandung. Ratusan game, proses cepat, harga bersahabat. Order via WhatsApp!" />
+  <meta property="og:title" content="Mikayla Games – Jasa Isi Game PS3 PS4 PS5 Bandung" />
+  <meta property="og:description" content="Koleksi game terlengkap, cepat, aman & bergaransi. Hubungi kami via WhatsApp sekarang!" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=1200" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ===========================
+       CSS VARIABLES
+    =========================== */
+    :root {
+      --bg-base:    #0B0F1A;
+      --bg-card:    #111827;
+      --bg-card2:   #161D2E;
+      --blue:       #3B82F6;
+      --blue-dark:  #2563EB;
+      --purple:     #8B5CF6;
+      --purple-dark:#7C3AED;
+      --white:      #F9FAFB;
+      --gray:       #9CA3AF;
+      --border:     rgba(59,130,246,.18);
+      --border-glow:rgba(59,130,246,.5);
+      --glow-blue:  0 0 24px rgba(59,130,246,.4);
+      --glow-purple:0 0 24px rgba(139,92,246,.4);
+      --glow-sm:    0 0 12px rgba(59,130,246,.25);
+      --font-head:  'Space Grotesk', sans-serif;
+      --font-body:  'Inter', sans-serif;
+      --radius:     14px;
+      --radius-sm:  8px;
+      --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-base);
+      color: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a   { text-decoration: none; color: inherit; }
+
+    /* ===========================
+       UTILITIES
+    =========================== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    .section-tag {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(59,130,246,.12);
+      border: 1px solid rgba(59,130,246,.3);
+      color: var(--blue);
+      font-family: var(--font-head);
+      font-size: 12px; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 100px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(26px,4vw,42px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-sub {
+      font-size: 16px; color: var(--gray);
+      max-width: 560px; line-height: 1.75;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 26px; border-radius: 100px;
+      font-family: var(--font-head); font-size: 14px; font-weight: 700;
+      border: none; cursor: pointer; transition: var(--transition);
+      white-space: nowrap; letter-spacing: .02em;
+    }
+
+    .btn-neon {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+      color: white;
+      box-shadow: 0 4px 20px rgba(59,130,246,.4), 0 0 0 1px rgba(59,130,246,.2);
+    }
+    .btn-neon:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(59,130,246,.55), 0 0 0 1px rgba(59,130,246,.4);
+    }
+
+    .btn-ghost {
+      background: rgba(255,255,255,.06);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .btn-ghost:hover {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(59,130,246,.5);
+      color: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: white; color: var(--bg-base);
+      font-weight: 800;
+      box-shadow: 0 4px 20px rgba(255,255,255,.15);
+    }
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(255,255,255,.25);
+    }
+
+    /* FADE-IN */
+    .fade-in {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .fade-in-d1 { transition-delay: .08s; }
+    .fade-in-d2 { transition-delay: .16s; }
+    .fade-in-d3 { transition-delay: .24s; }
+    .fade-in-d4 { transition-delay: .32s; }
+    .fade-in-d5 { transition-delay: .40s; }
+    .fade-in-d6 { transition-delay: .48s; }
+
+    /* ===========================
+       NAVBAR
+    =========================== */
+    #navbar {
+      position: sticky; top: 0; z-index: 999;
+      background: rgba(11,15,26,.75);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    #navbar.scrolled {
+      background: rgba(11,15,26,.92);
+      box-shadow: 0 2px 40px rgba(59,130,246,.1);
+    }
+
+    .nav-inner {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 68px;
+    }
+
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+
+    .nav-logo-icon {
+      width: 38px; height: 38px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 16px;
+      box-shadow: var(--glow-blue);
+    }
+
+    .nav-logo-text {
+      font-family: var(--font-head); font-weight: 800; font-size: 18px;
+      letter-spacing: .04em;
+    }
+    .nav-logo-text .glow { color: var(--blue); text-shadow: 0 0 12px rgba(59,130,246,.7); }
+
+    .nav-menu { display: flex; align-items: center; gap: 2px; list-style: none; }
+
+    .nav-menu a {
+      padding: 7px 13px; border-radius: var(--radius-sm);
+      font-family: var(--font-head); font-size: 13px; font-weight: 600;
+      color: var(--gray); transition: var(--transition);
+    }
+    .nav-menu a:hover { color: var(--blue); background: rgba(59,130,246,.08); }
+
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 8px; background: none; border: none;
+    }
+    .nav-hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--white); border-radius: 2px; transition: var(--transition);
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .nav-mobile {
+      display: none; flex-direction: column;
+      background: var(--bg-card); border-top: 1px solid var(--border);
+      padding: 14px 24px 22px; gap: 4px;
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      padding: 11px 14px; border-radius: var(--radius-sm);
+      font-family: var(--font-head); font-size: 15px; font-weight: 600;
+      color: var(--gray); transition: var(--transition);
+    }
+    .nav-mobile a:hover { color: var(--blue); background: rgba(59,130,246,.08); }
+    .nav-mobile .btn { margin-top: 10px; justify-content: center; }
+
+    /* ===========================
+       HERO SECTION
+    =========================== */
+    #beranda {
+      position: relative; overflow: hidden;
+      padding: 100px 0 80px;
+      background: var(--bg-base);
+    }
+
+    /* animated grid background */
+    #beranda::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 0;
+      background-image:
+        linear-gradient(rgba(59,130,246,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59,130,246,.07) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 30%, transparent 100%);
+    }
+
+    .hero-glow-1 {
+      position: absolute; border-radius: 50%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(59,130,246,.15), transparent 70%);
+      top: -200px; right: -100px; pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute; border-radius: 50%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(139,92,246,.12), transparent 70%);
+      bottom: -100px; left: -50px; pointer-events: none;
+    }
+
+    .hero-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center; position: relative; z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(59,130,246,.1);
+      border: 1px solid rgba(59,130,246,.3);
+      color: #93C5FD; font-family: var(--font-head);
+      font-size: 12px; font-weight: 600;
+      padding: 7px 14px; border-radius: 100px;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--blue);
+      animation: blink 1.8s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%,100% { opacity: 1; box-shadow: 0 0 6px var(--blue); }
+      50%      { opacity: .4; box-shadow: none; }
+    }
+
+    .hero-h1 {
+      font-family: var(--font-head);
+      font-size: clamp(30px,4.5vw,54px);
+      font-weight: 800; line-height: 1.1;
+      color: var(--white); margin-bottom: 20px;
+    }
+
+    .hero-h1 .neon {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 12px rgba(59,130,246,.5));
+    }
+
+    .hero-sub {
+      font-size: 17px; color: var(--gray); line-height: 1.8;
+      margin-bottom: 34px; max-width: 480px;
+    }
+
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .hero-img-wrap { position: relative; }
+
+    .hero-img-main {
+      width: 100%; height: 460px; object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 0 60px rgba(59,130,246,.2), 0 0 0 1px rgba(59,130,246,.15);
+    }
+
+    .hero-float-card {
+      position: absolute;
+      background: var(--bg-card2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      display: flex; align-items: center; gap: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.4), var(--glow-sm);
+    }
+
+    .hero-float-card-1 { bottom: 28px; left: -24px; }
+    .hero-float-card-2 { top: 28px; right: -20px; }
+
+    .hfc-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 18px;
+    }
+    .hfc-icon.blue { background: rgba(59,130,246,.15); color: var(--blue); }
+    .hfc-icon.purple { background: rgba(139,92,246,.15); color: var(--purple); }
+
+    .hfc-big { font-family: var(--font-head); font-size: 15px; font-weight: 700; color: var(--white); }
+    .hfc-small { font-size: 11px; color: var(--gray); margin-top: 2px; }
+
+    /* ===========================
+       ABOUT SECTION
+    =========================== */
+    #tentang { padding: 100px 0; }
+
+    .about-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+
+    .about-img-wrap { position: relative; }
+
+    .about-img-main {
+      width: 100%; height: 420px; object-fit: cover;
+      border-radius: 20px; border: 1px solid var(--border);
+      box-shadow: 0 0 50px rgba(139,92,246,.18);
+    }
+
+    .about-badge {
+      position: absolute; bottom: -18px; right: -18px;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white; padding: 18px 22px; border-radius: var(--radius);
+      text-align: center; box-shadow: var(--glow-blue);
+    }
+    .about-badge-num {
+      font-family: var(--font-head); font-size: 28px; font-weight: 800; line-height: 1;
+    }
+    .about-badge-label { font-size: 11px; opacity: .85; margin-top: 4px; }
+
+    .about-text p {
+      font-size: 16px; color: var(--gray); line-height: 1.85;
+      margin-bottom: 36px;
+    }
+
+    .about-stats {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+    }
+
+    .about-stat {
+      background: var(--bg-card2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px;
+      text-align: center; transition: var(--transition);
+    }
+    .about-stat:hover {
+      border-color: var(--blue);
+      box-shadow: var(--glow-sm);
+      transform: translateY(-4px);
+    }
+    .about-stat-num {
+      font-family: var(--font-head); font-size: 26px; font-weight: 800;
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .about-stat-label { font-size: 11px; color: var(--gray); margin-top: 5px; line-height: 1.4; }
+
+    /* ===========================
+       SERVICES SECTION
+    =========================== */
+    #layanan { padding: 100px 0; background: var(--bg-card); }
+
+    .section-header { text-align: center; margin-bottom: 56px; }
+    .section-header .section-sub { margin: 0 auto; }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 22px;
+    }
+
+    .service-card {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 30px 26px;
+      transition: var(--transition); cursor: default; position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(59,130,246,.05), rgba(139,92,246,.05));
+      opacity: 0; transition: var(--transition);
+    }
+
+    .service-card:hover {
+      border-color: var(--blue);
+      box-shadow: var(--glow-blue), 0 8px 40px rgba(0,0,0,.3);
+      transform: translateY(-6px);
+    }
+    .service-card:hover::before { opacity: 1; }
+
+    .service-icon {
+      width: 54px; height: 54px; border-radius: 14px;
+      background: rgba(59,130,246,.12);
+      color: var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; margin-bottom: 18px; transition: var(--transition);
+    }
+    .service-card:hover .service-icon {
+      background: linear-gradient(135deg, var(--blue), var(--purple));
+      color: white; box-shadow: var(--glow-sm);
+    }
+
+    .service-card h3 {
+      font-family: var(--font-head); font-size: 16px; font-weight: 700;
+      color: var(--white); margin-bottom: 10px;
+    }
+    .service-card p { font-size: 13px; color: var(--gray); line-height: 1.7; }
+
+    /* ===========================
+       KEUNGGULAN SECTION
+    =========================== */
+    #keunggulan { padding: 100px 0; }
+
+    .keunggulan-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+
+    .keunggulan-img img {
+      width: 100%; height: 460px; object-fit: cover;
+      border-radius: 20px; border: 1px solid var(--border);
+      box-shadow: 0 0 50px rgba(59,130,246,.18);
+    }
+
+    .keunggulan-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+
+    .keunggulan-item {
+      background: var(--bg-card2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px;
+      display: flex; gap: 14px; transition: var(--transition);
+    }
+    .keunggulan-item:hover {
+      border-color: rgba(59,130,246,.5);
+      box-shadow: var(--glow-sm); transform: translateY(-3px);
+    }
+
+    .keunggulan-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      border-radius: 10px; background: rgba(59,130,246,.12);
+      color: var(--blue); font-size: 17px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .keunggulan-item h4 {
+      font-family: var(--font-head); font-size: 13px; font-weight: 700;
+      color: var(--white); margin-bottom: 4px;
+    }
+    .keunggulan-item p { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+    /* ===========================
+       TESTIMONI SECTION
+    =========================== */
+    #testimoni { padding: 100px 0; background: var(--bg-card); }
+
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 22px;
+    }
+
+    .testi-card {
+      background: var(--bg-base); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      transition: var(--transition);
+    }
+    .testi-card:hover {
+      border-color: rgba(139,92,246,.5);
+      box-shadow: var(--glow-purple); transform: translateY(-4px);
+    }
+
+    .testi-stars { display: flex; gap: 3px; color: #FBBF24; font-size: 14px; margin-bottom: 16px; }
+
+    .testi-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(139,92,246,.1); border: 1px solid rgba(139,92,246,.25);
+      color: #C4B5FD; font-size: 11px; font-weight: 600; font-family: var(--font-head);
+      padding: 4px 10px; border-radius: 100px; margin-bottom: 14px;
+    }
+
+    .testi-quote {
+      font-size: 14px; color: var(--gray); line-height: 1.8;
+      font-style: italic; margin-bottom: 20px;
+    }
+    .testi-quote::before { content: '"'; }
+    .testi-quote::after  { content: '"'; }
+
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .testi-author img {
+      width: 44px; height: 44px; border-radius: 50%;
+      object-fit: cover; border: 2px solid rgba(59,130,246,.4);
+    }
+    .testi-name { font-family: var(--font-head); font-size: 14px; font-weight: 700; color: var(--white); }
+    .testi-loc  { font-size: 11px; color: var(--gray); margin-top: 2px; }
+
+    /* ===========================
+       CTA BANNER
+    =========================== */
+    #cta-banner {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #1E3A8A 0%, #312E81 50%, #4C1D95 100%);
+      position: relative; overflow: hidden;
+    }
+
+    #cta-banner::before {
+      content: '';
+      position: absolute; border-radius: 50%;
+      width: 500px; height: 500px;
+      background: rgba(59,130,246,.12);
+      top: -200px; right: -80px;
+    }
+
+    #cta-banner::after {
+      content: '';
+      position: absolute; border-radius: 50%;
+      width: 350px; height: 350px;
+      background: rgba(139,92,246,.12);
+      bottom: -120px; left: 5%;
+    }
+
+    .cta-inner { text-align: center; position: relative; z-index: 1; }
+
+    .cta-inner h2 {
+      font-family: var(--font-head);
+      font-size: clamp(26px,4vw,44px); font-weight: 800;
+      color: var(--white); margin-bottom: 14px;
+      text-shadow: 0 0 30px rgba(59,130,246,.4);
+    }
+
+    .cta-inner p {
+      font-size: 17px; color: rgba(255,255,255,.75); margin-bottom: 36px;
+    }
+
+    /* ===========================
+       KONTAK SECTION
+    =========================== */
+    #kontak { padding: 100px 0; }
+
+    .kontak-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+
+    .kontak-info-list { display: flex; flex-direction: column; gap: 18px; margin-top: 32px; }
+
+    .kontak-info-item { display: flex; gap: 16px; align-items: flex-start; }
+
+    .kontak-info-icon {
+      width: 46px; height: 46px; flex-shrink: 0;
+      border-radius: 12px; background: rgba(59,130,246,.1);
+      border: 1px solid rgba(59,130,246,.25);
+      color: var(--blue); font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .kontak-info-label {
+      font-family: var(--font-head); font-size: 11px; font-weight: 700;
+      color: var(--gray); text-transform: uppercase; letter-spacing: .07em;
+      margin-bottom: 4px;
+    }
+
+    .kontak-info-val { font-size: 15px; color: var(--white); font-weight: 500; }
+    .kontak-info-val a { color: var(--blue); font-weight: 700; }
+    .kontak-info-val a:hover { text-shadow: 0 0 10px rgba(59,130,246,.5); }
+
+    .kontak-form {
+      background: var(--bg-card2); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 36px;
+    }
+
+    .kontak-form h3 {
+      font-family: var(--font-head); font-size: 20px; font-weight: 700;
+      color: var(--white); margin-bottom: 24px;
+    }
+
+    .form-group { margin-bottom: 16px; }
+
+    .form-group label {
+      display: block; font-family: var(--font-head); font-size: 12px;
+      font-weight: 700; color: var(--gray); letter-spacing: .04em;
+      text-transform: uppercase; margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 16px;
+      background: var(--bg-base);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--white); font-family: var(--font-body); font-size: 14px;
+      outline: none; transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+    }
+
+    .form-group select option { background: var(--bg-card); color: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--gray); opacity: .6; }
+
+    .form-submit {
+      width: 100%; padding: 14px; justify-content: center; font-size: 15px;
+    }
+
+    /* ===========================
+       FLOATING WHATSAPP
+    =========================== */
+    .wa-float {
+      position: fixed; bottom: 28px; right: 28px; z-index: 998;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 26px;
+      box-shadow: 0 4px 20px rgba(37,211,102,.5), 0 0 0 0 rgba(37,211,102,.5);
+      animation: wa-pulse 2.5s ease-in-out infinite;
+    }
+    .wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37,211,102,.65);
+      animation: none;
+    }
+
+    @keyframes wa-pulse {
+      0%   { box-shadow: 0 4px 20px rgba(37,211,102,.5), 0 0 0 0 rgba(37,211,102,.4); }
+      70%  { box-shadow: 0 4px 20px rgba(37,211,102,.5), 0 0 0 16px rgba(37,211,102,0); }
+      100% { box-shadow: 0 4px 20px rgba(37,211,102,.5), 0 0 0 0 rgba(37,211,102,0); }
+    }
+
+    /* ===========================
+       FOOTER
+    =========================== */
+    footer {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      padding: 60px 0 28px;
+    }
+
+    .footer-inner {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 60px; margin-bottom: 48px;
+    }
+
+    .footer-brand-name {
+      font-family: var(--font-head); font-size: 20px; font-weight: 800;
+      letter-spacing: .05em; margin-bottom: 6px;
+    }
+
+    .footer-brand-name .glow {
+      color: var(--blue); text-shadow: 0 0 12px rgba(59,130,246,.6);
+    }
+
+    .footer-tagline { font-size: 13px; color: var(--gray); margin-bottom: 20px; max-width: 260px; line-height: 1.7; }
+
+    .footer-socials { display: flex; gap: 10px; }
+
+    .footer-social {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255,255,255,.06); border: 1px solid var(--border);
+      color: var(--gray); font-size: 14px;
+      display: flex; align-items: center; justify-content: center;
+      transition: var(--transition);
+    }
+    .footer-social:hover {
+      background: rgba(59,130,246,.15); border-color: var(--blue);
+      color: var(--blue); box-shadow: var(--glow-sm);
+    }
+
+    .footer-col h4 {
+      font-family: var(--font-head); font-size: 13px; font-weight: 700;
+      color: var(--white); text-transform: uppercase; letter-spacing: .07em;
+      margin-bottom: 18px;
+    }
+
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+    .footer-links a { font-size: 13px; color: var(--gray); transition: var(--transition); }
+    .footer-links a:hover { color: var(--blue); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.06); padding-top: 26px;
+      text-align: center; font-size: 12px; color: rgba(255,255,255,.3);
+    }
+
+    /* ===========================
+       RESPONSIVE
+    =========================== */
+    @media (max-width: 1024px) {
+      .hero-inner   { grid-template-columns: 1fr; text-align: center; }
+      .hero-sub     { margin: 0 auto 34px; }
+      .hero-btns    { justify-content: center; }
+      .hero-img-wrap{ display: none; }
+      .about-inner  { grid-template-columns: 1fr; gap: 40px; }
+      .about-img-wrap{ display: none; }
+      .keunggulan-inner { grid-template-columns: 1fr; }
+      .keunggulan-img{ display: none; }
+      .services-grid { grid-template-columns: repeat(2,1fr); }
+      .testi-grid   { grid-template-columns: repeat(2,1fr); }
+      .kontak-inner { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu, .nav-cta .btn { display: none; }
+      .nav-hamburger { display: flex; }
+      .services-grid { grid-template-columns: 1fr; }
+      .testi-grid   { grid-template-columns: 1fr; }
+      .keunggulan-list { grid-template-columns: 1fr; }
+      .about-stats  { grid-template-columns: repeat(3,1fr); }
+      .footer-inner { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-btns   { flex-direction: column; align-items: center; }
+      .about-stats { grid-template-columns: 1fr; }
+      .kontak-form { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===========================
+     NAVBAR
+=========================== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#beranda" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <div class="nav-logo-text">MIKAYLA <span class="glow">GAMES</span></div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank" class="btn btn-neon">
+          <i class="fa-brands fa-whatsapp"></i> Order Now
+        </a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#beranda"    class="nav-mob-link">Beranda</a>
+    <a href="#tentang"   class="nav-mob-link">Tentang</a>
+    <a href="#layanan"   class="nav-mob-link">Layanan</a>
+    <a href="#keunggulan" class="nav-mob-link">Keunggulan</a>
+    <a href="#testimoni" class="nav-mob-link">Testimoni</a>
+    <a href="#kontak"    class="nav-mob-link">Kontak</a>
+    <a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank" class="btn btn-neon">
+      <i class="fa-brands fa-whatsapp"></i> Order Now
+    </a>
+  </div>
+</nav>
+
+<!-- ===========================
+     HERO SECTION
+=========================== -->
+<section id="beranda">
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Left -->
+      <div>
+        <div class="hero-badge fade-in">
+          <div class="dot"></div>
+          500+ Console Terisi &nbsp;|&nbsp; Trusted Sejak 2020
+        </div>
+
+        <h1 class="hero-h1 fade-in fade-in-d1">
+          Isi Game <span class="neon">PS3, PS4 &amp; PS5</span><br>
+          Terlengkap di Bandung
+        </h1>
+
+        <p class="hero-sub fade-in fade-in-d2">
+          Ratusan game terbaru dan klasik siap dipasang ke console kamu. Cepat, aman, garansi. Layanan door-to-door se-Bandung.
+        </p>
+
+        <div class="hero-btns fade-in fade-in-d3">
+          <a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank" class="btn btn-neon">
+            <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+          </a>
+          <a href="#layanan" class="btn btn-ghost">
+            Lihat Layanan <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-img-wrap fade-in fade-in-d2">
+        <img
+          src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=800&q=80"
+          alt="PlayStation Console"
+          class="hero-img-main"
+          loading="lazy"
+        />
+
+        <div class="hero-float-card hero-float-card-1">
+          <div class="hfc-icon blue"><i class="fa-solid fa-gamepad"></i></div>
+          <div>
+            <div class="hfc-big">1000+ Games</div>
+            <div class="hfc-small">Koleksi Lengkap</div>
+          </div>
+        </div>
+
+        <div class="hero-float-card hero-float-card-2">
+          <div class="hfc-icon purple"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <div class="hfc-big">1–2 Jam Selesai</div>
+            <div class="hfc-small">Proses Super Cepat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     ABOUT SECTION
+=========================== -->
+<section id="tentang">
+  <div class="container">
+    <div class="about-inner">
+      <!-- Left: Image -->
+      <div class="about-img-wrap fade-in">
+        <img
+          src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=700&q=80"
+          alt="PS Controller"
+          class="about-img-main"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          <div class="about-badge-num">⭐ 5.0</div>
+          <div class="about-badge-label">Rating Gamers</div>
+        </div>
+      </div>
+
+      <!-- Right: Text -->
+      <div>
+        <div class="section-tag fade-in"><i class="fa-solid fa-circle-info"></i> Tentang Kami</div>
+        <h2 class="section-title fade-in fade-in-d1">Tentang <span class="gradient-text">Mikayla Games</span></h2>
+        <div class="about-text fade-in fade-in-d2">
+          <p>MIKAYLA GAMES adalah penyedia jasa isi game PlayStation (PS3, PS4, PS5) terpercaya di Bandung. Dengan koleksi game terlengkap dan selalu update, kami siap memenuhi kebutuhan hiburan gaming kamu di rumah. Pelayanan cepat, harga bersahabat, dan dijamin aman untuk console kesayangan kamu.</p>
+        </div>
+
+        <div class="about-stats">
+          <div class="about-stat fade-in fade-in-d2">
+            <div class="about-stat-num">500+</div>
+            <div class="about-stat-label">Customer Puas</div>
+          </div>
+          <div class="about-stat fade-in fade-in-d3">
+            <div class="about-stat-num">1000+</div>
+            <div class="about-stat-label">Game Tersedia</div>
+          </div>
+          <div class="about-stat fade-in fade-in-d4">
+            <div class="about-stat-num">24/7</div>
+            <div class="about-stat-label">Online Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     SERVICE SECTION
+=========================== -->
+<section id="layanan">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag fade-in"><i class="fa-solid fa-gamepad"></i> Apa yang Kami Tawarkan</div>
+      <h2 class="section-title fade-in fade-in-d1">Layanan <span class="gradient-text">Mikayla Games</span></h2>
+      <p class="section-sub fade-in fade-in-d2">Semua kebutuhan gaming PS kamu ada di sini. Cepat, lengkap, terpercaya.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card fade-in fade-in-d1">
+        <div class="service-icon"><i class="fa-solid fa-compact-disc"></i></div>
+        <h3>Isi Game PS3 (HEN/CFW)</h3>
+        <p>Game PS3 unlimited untuk console HEN atau CFW kamu. Koleksi lengkap dari klasik hingga terbaru.</p>
+      </div>
+
+      <div class="service-card fade-in fade-in-d2">
+        <div class="service-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <h3>Isi Game PS4 (Jailbreak)</h3>
+        <p>Game terbaru untuk PS4 jailbreak. Update rutin, semua genre tersedia, proses cepat.</p>
+      </div>
+
+      <div class="service-card fade-in fade-in-d3">
+        <div class="service-icon"><i class="fa-solid fa-circle-play"></i></div>
+        <h3>Isi Game PS5</h3>
+        <p>Layanan isi game PS5 sesuai update terbaru. Game AAA dan indie tersedia lengkap.</p>
+      </div>
+
+      <div class="service-card fade-in fade-in-d1">
+        <div class="service-icon"><i class="fa-solid fa-unlock"></i></div>
+        <h3>Jailbreak PS3 / PS4</h3>
+        <p>Buka kunci console agar bisa pasang game gratis. Proses aman dengan garansi dikerjakan teknisi berpengalaman.</p>
+      </div>
+
+      <div class="service-card fade-in fade-in-d2">
+        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Service &amp; Maintenance</h3>
+        <p>Cek kondisi dan perawatan console kamu agar tetap prima. Diagnosa gratis untuk setiap keluhan.</p>
+      </div>
+
+      <div class="service-card fade-in fade-in-d3">
+        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+        <h3>Konsultasi Game</h3>
+        <p>Bingung mau main game apa? Kami siap rekomendasikan game terbaik sesuai selera dan spesifikasi console kamu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     KEUNGGULAN SECTION
+=========================== -->
+<section id="keunggulan">
+  <div class="container">
+    <div class="keunggulan-inner">
+      <!-- Left: Text -->
+      <div>
+        <div class="section-tag fade-in"><i class="fa-solid fa-trophy"></i> Keunggulan</div>
+        <h2 class="section-title fade-in fade-in-d1">Kenapa <span class="gradient-text">Mikayla Games?</span></h2>
+        <p class="section-sub fade-in fade-in-d2" style="margin-bottom:36px;">
+          Dipercaya ratusan gamers Bandung sejak 2020. Ini yang membuat kami berbeda.
+        </p>
+
+        <div class="keunggulan-list">
+          <div class="keunggulan-item fade-in fade-in-d1">
+            <div class="keunggulan-icon"><i class="fa-solid fa-database"></i></div>
+            <div>
+              <h4>Koleksi Terlengkap</h4>
+              <p>Selalu update, semua genre</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-item fade-in fade-in-d2">
+            <div class="keunggulan-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div>
+              <h4>Proses Cepat</h4>
+              <p>1–2 jam langsung selesai</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-item fade-in fade-in-d3">
+            <div class="keunggulan-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>Aman &amp; Bergaransi</h4>
+              <p>Console dijamin aman</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-item fade-in fade-in-d4">
+            <div class="keunggulan-icon"><i class="fa-solid fa-tag"></i></div>
+            <div>
+              <h4>Harga Bersahabat</h4>
+              <p>Terjangkau untuk semua gamers</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-item fade-in fade-in-d1">
+            <div class="keunggulan-icon"><i class="fa-solid fa-car"></i></div>
+            <div>
+              <h4>Door to Door</h4>
+              <p>Layanan jemput se-Bandung</p>
+            </div>
+          </div>
+
+          <div class="keunggulan-item fade-in fade-in-d2">
+            <div class="keunggulan-icon"><i class="fa-solid fa-user-gear"></i></div>
+            <div>
+              <h4>Teknisi 5+ Tahun</h4>
+              <p>Berpengalaman &amp; profesional</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="keunggulan-img fade-in fade-in-d2">
+        <img
+          src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=700&q=80"
+          alt="Gaming setup"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     TESTIMONI SECTION
+=========================== -->
+<section id="testimoni">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag fade-in"><i class="fa-solid fa-quote-left"></i> Review Gamers</div>
+      <h2 class="section-title fade-in fade-in-d1">Apa Kata <span class="gradient-text">Gamers</span></h2>
+      <p class="section-sub fade-in fade-in-d2">Kepercayaan pelanggan adalah achievement terbaik kami.</p>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card fade-in fade-in-d1">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="testi-badge"><i class="fa-solid fa-circle-dot" style="font-size:9px;"></i> PS5 Owner</div>
+        <p class="testi-quote">Game lengkap banget! Pesan malem, paginya udah kelar. Mantap Mikayla!</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/100?img=11" alt="Rizky Pratama" loading="lazy" />
+          <div>
+            <div class="testi-name">Rizky Pratama</div>
+            <div class="testi-loc"><i class="fa-solid fa-location-dot" style="color:var(--blue);font-size:10px;"></i> Buah Batu, Bandung</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in fade-in-d2">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="testi-badge"><i class="fa-solid fa-circle-dot" style="font-size:9px;"></i> PS4 Owner</div>
+        <p class="testi-quote">Harganya bersahabat, gamenya banyak, dan amanah. Recommended!</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/100?img=12" alt="Dimas Aditya" loading="lazy" />
+          <div>
+            <div class="testi-name">Dimas Aditya</div>
+            <div class="testi-loc"><i class="fa-solid fa-location-dot" style="color:var(--blue);font-size:10px;"></i> Antapani, Bandung</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card fade-in fade-in-d3">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="testi-badge"><i class="fa-solid fa-circle-dot" style="font-size:9px;"></i> PS3 Owner</div>
+        <p class="testi-quote">PS3 lama saya masih bisa diisi banyak game baru. Teknisinya ramah dan paham banget.</p>
+        <div class="testi-author">
+          <img src="https://i.pravatar.cc/100?img=13" alt="Galih Saputra" loading="lazy" />
+          <div>
+            <div class="testi-name">Galih Saputra</div>
+            <div class="testi-loc"><i class="fa-solid fa-location-dot" style="color:var(--blue);font-size:10px;"></i> Cimahi, Bandung</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     CTA BANNER
+=========================== -->
+<section id="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="fade-in">Siap Nge-Game <span class="gradient-text">Tanpa Batas?</span></h2>
+      <p class="fade-in fade-in-d1">Hubungi Mikayla Games sekarang dan mulai petualangan gaming tanpa batas. Proses cepat, harga terjangkau!</p>
+      <a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank" class="btn btn-white fade-in fade-in-d2">
+        <i class="fa-brands fa-whatsapp" style="font-size:20px;color:#25D366;"></i> Chat WhatsApp Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     KONTAK SECTION
+=========================== -->
+<section id="kontak">
+  <div class="container">
+    <div class="kontak-inner">
+      <!-- Left: Info -->
+      <div>
+        <div class="section-tag fade-in"><i class="fa-solid fa-headset"></i> Kontak</div>
+        <h2 class="section-title fade-in fade-in-d1">Hubungi <span class="gradient-text">Mikayla Games</span></h2>
+        <p class="section-sub fade-in fade-in-d2">Siap melayani pertanyaan dan order kamu kapan saja.</p>
+
+        <div class="kontak-info-list">
+          <div class="kontak-info-item fade-in fade-in-d1">
+            <div class="kontak-info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="kontak-info-label">WhatsApp</div>
+              <div class="kontak-info-val">
+                <a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank">+62 851-6306-1987</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="kontak-info-item fade-in fade-in-d2">
+            <div class="kontak-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="kontak-info-label">Area Layanan</div>
+              <div class="kontak-info-val">Bandung &amp; sekitarnya (Cimahi, Jatinangor)</div>
+            </div>
+          </div>
+
+          <div class="kontak-info-item fade-in fade-in-d3">
+            <div class="kontak-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <div class="kontak-info-label">Jam Operasional</div>
+              <div class="kontak-info-val">Setiap hari, 09.00 – 22.00 WIB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="kontak-form fade-in fade-in-d2">
+        <h3><i class="fa-solid fa-gamepad" style="color:var(--blue);margin-right:8px;"></i>Form Order</h3>
+
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Contoh: Rizky Pratama" />
+        </div>
+
+        <div class="form-group">
+          <label for="console">Tipe Console</label>
+          <select id="console">
+            <option value="" disabled selected>Pilih tipe console kamu</option>
+            <option value="PS3 (HEN/CFW)">PS3 (HEN/CFW)</option>
+            <option value="PS4 (Jailbreak)">PS4 (Jailbreak)</option>
+            <option value="PS5">PS5</option>
+            <option value="Jailbreak PS3">Jailbreak PS3</option>
+            <option value="Jailbreak PS4">Jailbreak PS4</option>
+            <option value="Service & Maintenance">Service &amp; Maintenance</option>
+            <option value="Konsultasi">Konsultasi Game</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan / Permintaan</label>
+          <textarea id="pesan" placeholder="Ceritakan kebutuhan gaming kamu..."></textarea>
+        </div>
+
+        <button class="btn btn-neon form-submit" onclick="submitForm()">
+          <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================
+     FLOATING WHATSAPP
+=========================== -->
+<a href="https://wa.me/6285163061987?text=Halo%20Mikayla%20Games%2C%20saya%20mau%20isi%20game%20console%20saya" target="_blank" class="wa-float" title="Chat WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">MIKAYLA <span class="glow">GAMES</span></div>
+        <p class="footer-tagline">Your Gaming Partner in Bandung. Isi game PS3, PS4, PS5 terlengkap dan terpercaya.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="footer-social" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul class="footer-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#keunggulan">Keunggulan</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Layanan</h4>
+        <ul class="footer-links">
+          <li><a href="#layanan">Isi Game PS3</a></li>
+          <li><a href="#layanan">Isi Game PS4</a></li>
+          <li><a href="#layanan">Isi Game PS5</a></li>
+          <li><a href="#layanan">Jailbreak PS3/PS4</a></li>
+          <li><a href="#layanan">Service Console</a></li>
+          <li><a href="#layanan">Konsultasi Game</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Mikayla Games Bandung. All rights reserved. &nbsp;|&nbsp; Made with ❤️ for Gamers
+    </div>
+  </div>
+</footer>
+
+<!-- ===========================
+     JAVASCRIPT
+=========================== -->
+<script>
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Hamburger toggle
+  const hamburger = document.getElementById('hamburger');
+  const navMobile  = document.getElementById('navMobile');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMobile.classList.toggle('open');
+  });
+
+  document.querySelectorAll('.nav-mob-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navMobile.classList.remove('open');
+    });
+  });
+
+  // IntersectionObserver fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // WhatsApp form submit
+  function submitForm() {
+    const nama    = document.getElementById('nama').value.trim();
+    const console = document.getElementById('console').value;
+    const pesan   = document.getElementById('pesan').value.trim();
+
+    if (!nama || !console || !pesan) {
+      alert('Mohon lengkapi semua kolom terlebih dahulu.');
+      return;
+    }
+
+    const msg = `Halo Mikayla Games! Saya mau order:\n\n*Nama:* ${nama}\n*Console:* ${console}\n*Pesan:* ${pesan}`;
+    const url = `https://wa.me/6285163061987?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
