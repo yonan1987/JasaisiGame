@@ -1,0 +1,12 @@
+(globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
+    script: typeof document === "object" ? document.currentScript : undefined,
+    chunks: [
+  "static/chunks/node_modules_jspdf_dist_jspdf_es_min_53537ff9.js",
+  "static/chunks/src_b7bdbd67._.js",
+  "static/chunks/node_modules_motion-dom_dist_es_96604af9._.js",
+  "static/chunks/node_modules_framer-motion_dist_es_b66a9e8b._.js",
+  "static/chunks/node_modules_next_71e330a9._.js",
+  "static/chunks/node_modules_9bf09110._.js"
+],
+    source: "dynamic"
+});
